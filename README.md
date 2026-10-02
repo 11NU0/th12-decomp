@@ -1,4 +1,5 @@
 # th12-decomp
+![Uploading {52971DDE-7724-4BA7-A335-829855ABA4D3}.png…]()
 
 Reconstructing `th12.exe` (Touhou 12 / Undefined Fantastic Object (Seirensen), retail) from
 Ghidra delink output plus a hand-corrected C corpus, using the original
