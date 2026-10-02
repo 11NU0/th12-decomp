@@ -1,0 +1,18 @@
+/* errno_t __cdecl __cftoe(double * _Value, char * _Buf, size_t _SizeInBytes, int _Dec, int _Caps) @ 0048a52a  32 bytes */
+#include "th12.h"
+
+/* Library Function - Single Match
+    __cftoe
+   
+   Library: Visual Studio 2008 Release */
+
+errno_t __cdecl __cftoe(double *_Value,char *_Buf,size_t _SizeInBytes,int _Dec,int _Caps)
+
+{
+  errno_t eVar1;
+  
+  eVar1 = __cftoe_l(_Value,_Buf,_SizeInBytes,_Dec,_Caps,(localeinfo_struct *)0x0);
+  return eVar1;
+}
+
+

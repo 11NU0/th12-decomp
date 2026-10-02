@@ -1,0 +1,121 @@
+CPtoLCID	0047377f	_CPtoLCID
+FID_conflict___atodbl	0048dce8	<CRT conflict label>
+FID_conflict___atodbl	0048de67	<CRT conflict label>
+FID_conflict___set_dstbias	00476838	<CRT conflict label>
+FID_conflict___set_dstbias	00476849	<CRT conflict label>
+FID_conflict___set_dstbias	0047685a	<CRT conflict label>
+FID_conflict___vscprintf_p	0046cb49	<CRT conflict label>
+FID_conflict___vscprintf_p	0046cb82	<CRT conflict label>
+FID_conflict___vscprintf_p_l	0046cb65	<CRT conflict label>
+FID_conflict___vscprintf_p_l	0046cb9e	<CRT conflict label>
+FID_conflict___vwprintf_s_l	0048d479	<CRT conflict label>
+FID_conflict___vwprintf_s_l	0048d496	<CRT conflict label>
+FID_conflict___vwprintf_s_l	0048d4b3	<CRT conflict label>
+FID_conflict__vprintf_s	0048d4d0	<CRT conflict label>
+FID_conflict__vprintf_s	0048d4ec	<CRT conflict label>
+FID_conflict__vprintf_s	0048d508	<CRT conflict label>
+FUN_004014b0	004014b0	@FUN_004014b0@4
+FUN_00406090	00406090	@FUN_00406090@4
+FUN_00406110	00406110	@FUN_00406110@4
+FUN_00412050	00412050	@FUN_00412050@4
+FUN_0041a960	0041a960	@FUN_0041a960@4
+FUN_00422c10	00422c10	@FUN_00422c10@4
+FUN_00431780	00431780	@FUN_00431780@8
+FUN_0043f010	0043f010	@FUN_0043f010@4
+FUN_0044a290	0044a290	@FUN_0044a290@4
+FUN_0044d310	0044d310	_FUN_0044d310
+FUN_0044d340	0044d340	_FUN_0044d340
+FUN_004555f0	004555f0	@FUN_004555f0@4
+FUN_0045d8c0	0045d8c0	@FUN_0045d8c0@4
+FUN_0046ca4f	0046ca4f	_FUN_0046ca4f
+FUN_0046ce35	0046ce35	@FUN_0046ce35@4
+FUN_0046d12a	0046d12a	_FUN_0046d12a
+FUN_0046d143	0046d143	_FUN_0046d143
+FUN_0046d14e	0046d14e	_FUN_0046d14e
+FUN_00474376	00474376	_FUN_00474376
+FUN_00474fce	00474fce	_FUN_00474fce
+FUN_0047aa05	0047aa05	_FUN_0047aa05
+FUN_0048c298	0048c298	_FUN_0048c298
+FUN_0048d624	0048d624	_FUN_0048d624
+FUN_0048eb61	0048eb61	_FUN_0048eb61
+FUN_0049149e	0049149e	_FUN_0049149e
+FUN_004914b9	004914b9	_FUN_004914b9
+FUN_004914d9	004914d9	_FUN_004914d9
+FUN_004914f8	004914f8	_FUN_004914f8
+__EH4_GlobalUnwind_4	0047b59a	@_EH4_GlobalUnwind_4@4
+___AdjustPointer	004921d6	___AdjustPointer
+___DestructExceptionObject	00492181	___DestructExceptionObject
+___crtCorExitProcess	00472c36	___crtCorExitProcess
+___crtExitProcess	00472c61	___crtExitProcess
+___crtInitCritSecAndSpinCount	0047b416	___crtInitCritSecAndSpinCount
+___iscsym	0048beb8	___iscsym
+___iscsymf	0048be76	___iscsymf
+___iswcsym	0047c818	___iswcsym
+___iswcsymf	0047c868	___iswcsymf
+__atoldbl	0048dda8	__atoldbl
+__cexit	00472f21	__cexit
+__cfltcvt	0048ac4e	__cfltcvt
+__copytlocinfo_nolock	0047411d	@_copytlocinfo_nolock@4
+__cropzeros	0048a2d8	__cropzeros
+__crt_wait_module_handle	00475149	__crt_wait_module_handle
+__crt_waiting_on_module_handle	00472bdd	__crt_waiting_on_module_handle
+__errcode	004966c6	__errcode
+__exit	00472f0b	__exit
+__fassign	0048a28c	__fassign
+__forcdecpt	0048a2c5	__forcdecpt
+__freea	0048326a	__freea
+__freebuf	0049112f	__freebuf
+__ftbuf	0048d3b5	__ftbuf
+__global_unwind2	0048c888	__global_unwind2
+__iswalnum_l	0047c720	__iswalnum_l
+__iswalpha_l	0047c5ee	__iswalpha_l
+__iswcntrl_l	0047c7b0	__iswcntrl_l
+__iswcsym_l	0047c7ee	__iswcsym_l
+__iswcsymf_l	0047c83e	__iswcsymf_l
+__iswdigit_l	0047c672	__iswdigit_l
+__iswgraph_l	0047c780	__iswgraph_l
+__iswlower_l	0047c648	__iswlower_l
+__iswprint_l	0047c750	__iswprint_l
+__iswpunct_l	0047c6f6	__iswpunct_l
+__iswspace_l	0047c6cc	__iswspace_l
+__iswupper_l	0047c61e	__iswupper_l
+__iswxdigit_l	0047c69c	__iswxdigit_l
+__itoa_s	0048da89	__itoa_s
+__ltoa_s	0048dab3	__ltoa_s
+__mbsnbicoll	0048e329	__mbsnbicoll
+__onexit	0046d9f6	__onexit
+__positive	0048a22e	__positive
+__set_errno_from_matherr	00496673	__set_errno_from_matherr
+__un_inc	00477d52	__un_inc
+__un_inc	00478dd9	__un_inc
+__unlock_file	0047c16f	__unlock_file
+__vsnprintf_s	004726df	__vsnprintf_s
+_atexit	0046da32	_atexit
+_atof	0046d4f7	_atof
+_atol	0046d114	_atol
+_exit	00472ef5	_exit
+_isleadbyte	0047c5db	_isleadbyte
+_iswalnum	0047c73a	_iswalnum
+_iswalpha	0047c608	_iswalpha
+_iswcntrl	0047c7c7	_iswcntrl
+_iswdigit	0047c689	_iswdigit
+_iswgraph	0047c79a	_iswgraph
+_iswlower	0047c65f	_iswlower
+_iswprint	0047c76a	_iswprint
+_iswpunct	0047c70d	_iswpunct
+_iswspace	0047c6e3	_iswspace
+_iswupper	0047c635	_iswupper
+_iswxdigit	0047c6b6	_iswxdigit
+_mbtowc	0048c27e	_mbtowc
+_store_str	00484e7d	_store_str
+_strrchr	0046d260	_strrchr
+_vsprintf	0046cad8	_vsprintf
+_vsprintf_s	004725bb	_vsprintf_s
+_wctomb	0047c571	_wctomb
+_wctomb_s	0047c503	_wctomb_s
+_write_string	00470198	_write_string
+_write_string	004710f2	_write_string
+_write_string	0047c97e	_write_string
+getStringHelper	0047e144	_getStringHelper
+strncnt	0048328a	_strncnt
+strncnt	004907dc	_strncnt

@@ -1,0 +1,40 @@
+/* undefined __stdcall FUN_00461350(void) @ 00461350  123 bytes */
+#include "th12.h"
+
+void __stdcall FUN_00461350(void)
+
+{
+  undefined4 *puVar1;
+  int iVar2;
+  int iVar3;
+  undefined4 *in_EAX;
+  undefined4 *unaff_EBX;
+  
+  iVar3 = DAT_004ce8cc;
+  puVar1 = unaff_EBX + 1;
+  *puVar1 = unaff_EBX;
+  unaff_EBX[2] = 0;
+  unaff_EBX[3] = 0;
+  if (*(int *)((int)iVar3 + 0x8856c0) == 0) {
+    *(undefined4 **)((int)iVar3 + 0x8856c0) = puVar1;
+  }
+  else {
+    iVar2 = *(int *)((int)iVar3 + 0x8856c4);
+    if (*(int *)((int)iVar2 + 4) != 0) {
+      unaff_EBX[2] = *(int *)((int)iVar2 + 4);
+      *(undefined4 **)(*(int *)((int)iVar2 + 4) + 8) = puVar1;
+    }
+    *(undefined4 **)((int)iVar2 + 4) = puVar1;
+    unaff_EBX[3] = iVar2;
+  }
+  *(undefined4 **)((int)iVar3 + 0x8856c4) = puVar1;
+  *(int *)((int)iVar3 + 0x88ed48) = *(int *)((int)iVar3 + 0x88ed48) + 1;
+  if (*(int *)((int)iVar3 + 0x88ed48) == 0) {
+    *(int *)((int)iVar3 + 0x88ed48) = *(int *)((int)iVar3 + 0x88ed48) + 1;
+  }
+  *unaff_EBX = *(undefined4 *)((int)iVar3 + 0x88ed48);
+  *in_EAX = *(undefined4 *)((int)iVar3 + 0x88ed48);
+  return;
+}
+
+

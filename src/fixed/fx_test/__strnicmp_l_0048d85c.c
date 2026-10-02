@@ -1,0 +1,69 @@
+/* int __cdecl __strnicmp_l(char * _Str1, char * _Str2, size_t _MaxCount, _locale_t _Locale) @ 0048d85c  242 bytes */
+
+#include "th12.h"
+
+/* Library Function - Single Match
+    __strnicmp_l
+   
+   Library: Visual Studio 2008 Release */
+
+typedef struct local_14__u { undefined4 _; undefined4 locinfo; } local_14__u;
+int __cdecl __strnicmp_l(char *_Str1,char *_Str2,size_t _MaxCount,_locale_t _Locale)
+
+{
+  local_14__u *local_14__u_alias;
+  int *piVar1;
+  int iVar2;
+  int iVar3;
+  localeinfo_struct local_14;
+  int local_c;
+  char local_8;
+  
+  if (_MaxCount == 0) {
+    iVar2 = 0;
+  }
+  else {
+    _LocaleUpdate__LocaleUpdate((_LocaleUpdate *)&local_14,_Locale);
+    if ((_Str1 == (char *)0x0) || (_Str2 == (char *)0x0)) {
+      piVar1 = __errno();
+      *piVar1 = 0x16;
+      __invalid_parameter((wchar_t *)0x0,(wchar_t *)0x0,(wchar_t *)0x0,0,0);
+      if (local_8 != '\0') {
+        *(uint *)(local_c + 0x70) = *(uint *)(local_c + 0x70) & 0xfffffffd;
+      }
+      iVar2 = 0x7fffffff;
+    }
+    else if (_MaxCount < 0x80000000) {
+  local_14__u_alias = (local_14__u *)&local_14;
+      if ((local_14__u_alias->locinfo)->lc_category[0].wlocale == (wchar_t *)0x0) {
+        iVar2 = ___ascii_strnicmp(_Str1,_Str2,_MaxCount);
+      }
+      else {
+        do {
+          iVar2 = __tolower_l((uint)(byte)*_Str1,&local_14);
+          _Str1 = _Str1 + 1;
+          iVar3 = __tolower_l((uint)(byte)*_Str2,&local_14);
+          _Str2 = (char *)((byte *)_Str2 + 1);
+          _MaxCount = _MaxCount - 1;
+          if ((_MaxCount == 0) || (iVar2 == 0)) break;
+        } while (iVar2 == iVar3);
+        iVar2 = iVar2 - iVar3;
+      }
+      if (local_8 != '\0') {
+        *(uint *)(local_c + 0x70) = *(uint *)(local_c + 0x70) & 0xfffffffd;
+      }
+    }
+    else {
+      piVar1 = __errno();
+      *piVar1 = 0x16;
+      __invalid_parameter((wchar_t *)0x0,(wchar_t *)0x0,(wchar_t *)0x0,0,0);
+      if (local_8 != '\0') {
+        *(uint *)(local_c + 0x70) = *(uint *)(local_c + 0x70) & 0xfffffffd;
+      }
+      iVar2 = 0x7fffffff;
+    }
+  }
+  return iVar2;
+}
+
+

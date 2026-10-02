@@ -1,0 +1,17 @@
+/* DName * __cdecl FID_conflict:getGuardNumber(DName * param_1) @ 0047f377  22 bytes */
+#include "th12.h"
+
+/* Library Function - Multiple Matches With Different Base Names
+    private: static class DName __cdecl UnDecorator::getCallIndex(void)
+    private: static class DName __cdecl UnDecorator::getGuardNumber(void)
+   
+   Library: Visual Studio 2008 Release */
+
+DName * __cdecl FID_conflict_getGuardNumber(DName *param_1)
+
+{
+  UnDecorator::getDimension(param_1,'\0');
+  return param_1;
+}
+
+

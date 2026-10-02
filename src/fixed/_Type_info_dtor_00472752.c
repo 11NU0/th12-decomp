@@ -1,0 +1,37 @@
+/* void __cdecl _Type_info_dtor(type_info * param_1) @ 00472752  103 bytes */
+#include "th12.h"
+
+/* WARNING: Function: __SEH_prolog4 replaced with injection: SEH_prolog4 */
+/* WARNING: Function: __SEH_epilog4 replaced with injection: EH_epilog3 */
+/* Library Function - Single Match
+    private: static void __cdecl type_info__Type_info_dtor(class type_info *)
+   
+   Libraries: Visual Studio 2005 Release, Visual Studio 2008 Release, Visual Studio 2010 Release */
+
+void __cdecl type_info__Type_info_dtor(type_info *param_1)
+
+{
+  int *_Memory;
+  int *piVar1;
+  int *piVar2;
+  
+  __lock(0xe);
+  _Memory = DAT_004b3d68;
+  if (*(int *)((int)param_1 + 4) != 0) {
+    piVar1 = (int *)&DAT_004b3d64;
+    do {
+      piVar2 = piVar1;
+      if (DAT_004b3d68 == (int *)0x0) goto LAB_00472796;
+      piVar1 = DAT_004b3d68;
+    } while (*DAT_004b3d68 != *(int *)((int)param_1 + 4));
+    piVar2[1] = DAT_004b3d68[1];
+    _free(_Memory);
+LAB_00472796:
+    _free(*(void **)((int)param_1 + 4));
+    *(undefined4 *)((int)param_1 + 4) = 0;
+  }
+  FUN_004727b9();
+  return;
+}
+
+

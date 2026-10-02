@@ -1,0 +1,1769 @@
+/* Byte-for-byte override for FUN_00444c80.
+
+ * Original bytes (1555):
+ *     0000: 8b 0d a8 0c 4b 00 33 c0
+ *     0008: 83 f9 04 0f 9d c0 55 8b
+ *     0010: 6c 24 08 56 05 83 00 00
+ *     0018: 00 8b f0 8b 45 24 83 f8
+ *     0020: 04 0f 87 ff 05 00 00 53
+ *     0028: 57 ff 24 85 b0 52 44 00
+ *     0030: 83 bd 6c 06 00 00 00 75
+ *     0038: 2c 8b 15 b8 43 4b 00 8b
+ *     0040: 82 b4 8f 01 00 6a 00 6a
+ *     0048: 14 8d 4c 24 1c 51 50 b8
+ *     0050: 17 00 00 00 33 c9 e8 c5
+ *     0058: c8 01 00 8b 4c 24 14 89
+ *     0060: 8d 6c 06 00 00 a1 d0 eb
+ *     0068: 4a 00 33 d2 83 f8 04 0f
+ *     0070: 9d c2 bb 01 00 00 00 4a
+ *     0078: 83 e2 03 42 89 55 30 a3
+ *     0080: a8 0c 4b 00 8b 84 b5 c8
+ *     0088: 02 00 00 50 e8 5f cc 01
+ *     0090: 00 8b fd c7 84 b5 c8 02
+ *     0098: 00 00 00 00 00 00 e8 7d
+ *     00a0: a2 ff ff 8b 8c b5 c8 02
+ *     00a8: 00 00 51 bb 03 00 00 00
+ *     00b0: e8 ab cc 01 00 0f b7 5d
+ *     00b8: 28 8b 94 b5 c8 02 00 00
+ *     00c0: 66 83 c3 11 52 e8 26 cc
+ *     00c8: 01 00 8b 4d 14 6a 00 6a
+ *     00d0: 6e 8d 44 24 1c 50 51 b8
+ *     00d8: 17 00 00 00 33 c9 e8 3d
+ *     00e0: c8 01 00 8b 54 24 14 b9
+ *     00e8: 01 00 00 00 8b c5 89 95
+ *     00f0: 80 04 00 00 e8 c7 a1 ff
+ *     00f8: ff 83 3d a8 0c 4b 00 04
+ *     0100: 0f 8d 45 02 00 00 8b 3d
+ *     0108: 1c 45 4b 00 33 db 39 9f
+ *     0110: 98 05 00 00 74 28 39 9f
+ *     0118: 8c 4b 00 00 74 20 39 9f
+ *     0120: 80 91 00 00 74 18 39 9f
+ *     0128: 74 d7 00 00 74 10 39 9f
+ *     0130: 68 1d 01 00 74 08 39 9f
+ *     0138: 5c 63 01 00 75 5a 8b 84
+ *     0140: b5 c8 02 00 00 8b 15 cc
+ *     0148: e8 4c 00 50 e8 4f cb 01
+ *     0150: 00 3b c3 75 07 89 9c b5
+ *     0158: c8 02 00 00 83 c0 10 3b
+ *     0160: c3 74 28 eb 0b 8d a4 24
+ *     0168: 00 00 00 00 8d 64 24 00
+ *     0170: 8b 08 ba aa 00 00 00 66
+ *     0178: 39 91 ea 03 00 00 0f 84
+ *     0180: a0 01 00 00 8b 40 04 3b
+ *     0188: c3 75 e5 89 5c 24 14 8d
+ *     0190: 44 24 14 e8 68 cf 01 00
+ *     0198: 39 9f 9c 05 00 00 74 28
+ *     01a0: 39 9f 90 4b 00 00 74 20
+ *     01a8: 39 9f 84 91 00 00 74 18
+ *     01b0: 39 9f 78 d7 00 00 74 10
+ *     01b8: 39 9f 6c 1d 01 00 74 08
+ *     01c0: 39 9f 60 63 01 00 75 50
+ *     01c8: 8b 94 b5 c8 02 00 00 52
+ *     01d0: 8b 15 cc e8 4c 00 e8 c5
+ *     01d8: ca 01 00 3b c3 75 07 89
+ *     01e0: 9c b5 c8 02 00 00 83 c0
+ *     01e8: 10 3b c3 74 1e 8d 49 00
+ *     01f0: 8b 08 ba ab 00 00 00 66
+ *     01f8: 39 91 ea 03 00 00 0f 84
+ *     0200: 2d 01 00 00 8b 40 04 3b
+ *     0208: c3 75 e5 89 5c 24 14 8d
+ *     0210: 44 24 14 e8 e8 ce 01 00
+ *     0218: 39 9f a0 05 00 00 74 28
+ *     0220: 39 9f 94 4b 00 00 74 20
+ *     0228: 39 9f 88 91 00 00 74 18
+ *     0230: 39 9f 7c d7 00 00 74 10
+ *     0238: 39 9f 70 1d 01 00 74 08
+ *     0240: 39 9f 64 63 01 00 75 50
+ *     0248: 8b 94 b5 c8 02 00 00 52
+ *     0250: 8b 15 cc e8 4c 00 e8 45
+ *     0258: ca 01 00 3b c3 75 07 89
+ *     0260: 9c b5 c8 02 00 00 83 c0
+ *     0268: 10 3b c3 74 1e 8d 49 00
+ *     0270: 8b 08 ba ac 00 00 00 66
+ *     0278: 39 91 ea 03 00 00 0f 84
+ *     0280: ba 00 00 00 8b 40 04 3b
+ *     0288: c3 75 e5 89 5c 24 14 8d
+ *     0290: 44 24 14 e8 68 ce 01 00
+ *     0298: 39 9f a4 05 00 00 74 2e
+ *     02a0: 39 9f 98 4b 00 00 74 26
+ *     02a8: 39 9f 8c 91 00 00 74 1e
+ *     02b0: 39 9f 80 d7 00 00 74 16
+ *     02b8: 39 9f 74 1d 01 00 74 0e
+ *     02c0: 39 9f 68 63 01 00 0f 85
+ *     02c8: 08 01 00 00 33 db 8b 94
+ *     02d0: b5 c8 02 00 00 52 8b 15
+ *     02d8: cc e8 4c 00 e8 bf c9 01
+ *     02e0: 00 3b c3 75 07 89 9c b5
+ *     02e8: c8 02 00 00 83 c0 10 3b
+ *     02f0: c3 74 28 eb 0b 8d a4 24
+ *     02f8: 00 00 00 00 8d 64 24 00
+ *     0300: 8b 08 ba ad 00 00 00 66
+ *     0308: 39 91 ea 03 00 00 0f 84
+ *     0310: e5 00 00 00 8b 40 04 3b
+ *     0318: c3 75 e5 89 5c 24 14 e9
+ *     0320: a7 00 00 00 8b c1 8b 08
+ *     0328: 89 4c 24 14 e9 5e fe ff
+ *     0330: ff 8b c1 8b 08 89 4c 24
+ *     0338: 14 e9 d1 fe ff ff 8b c1
+ *     0340: 8b 08 89 4c 24 14 e9 44
+ *     0348: ff ff ff a1 1c 45 4b 00
+ *     0350: 33 ff 39 b8 a8 05 00 00
+ *     0358: 74 28 39 b8 9c 4b 00 00
+ *     0360: 74 20 39 b8 90 91 00 00
+ *     0368: 74 18 39 b8 84 d7 00 00
+ *     0370: 74 10 39 b8 78 1d 01 00
+ *     0378: 74 08 39 b8 6c 63 01 00
+ *     0380: 75 52 8b 94 b5 c8 02 00
+ *     0388: 00 52 8b 15 cc e8 4c 00
+ *     0390: e8 0b c9 01 00 3b c7 75
+ *     0398: 07 89 bc b5 c8 02 00 00
+ *     03a0: 83 c0 10 3b c7 74 20 eb
+ *     03a8: 07 8d a4 24 00 00 00 00
+ *     03b0: 8b 08 ba ae 00 00 00 66
+ *     03b8: 39 91 ea 03 00 00 74 39
+ *     03c0: 8b 40 04 3b c7 75 e9 89
+ *     03c8: 7c 24 14 8d 44 24 14 e8
+ *     03d0: 2c cd 01 00 83 bd b8 02
+ *     03d8: 00 00 06 0f 8e 43 02 00
+ *     03e0: 00 b9 02 00 00 00 8b c5
+ *     03e8: e8 d3 9e ff ff 5f 5b 5e
+ *     03f0: b8 01 00 00 00 5d c2 04
+ *     03f8: 00 8b c1 8b 08 89 4c 24
+ *     0400: 14 eb c8 83 f9 04 7d 6d
+ *     0408: 8b 55 28 8d 7d 28 b0 10
+ *     0410: 89 57 04 84 05 c4 48 4d
+ *     0418: 00 75 08 84 05 c0 48 4d
+ *     0420: 00 74 09 6a ff 8b c7 e8
+ *     0428: c4 f8 01 00 b0 20 84 05
+ *     0430: c4 48 4d 00 75 08 84 05
+ *     0438: c0 48 4d 00 74 09 6a 01
+ *     0440: 8b c7 e8 a9 f8 01 00 8b
+ *     0448: 47 04 3b 07 74 27 ba 0a
+ *     0450: 00 00 00 e8 b8 ec 00 00
+ *     0458: 8b ce 8b c5 e8 2f 9f ff
+ *     0460: ff 0f b7 1f 8b 8c b5 c8
+ *     0468: 02 00 00 66 83 c3 07 51
+ *     0470: e8 7b c8 01 00 a1 c4 48
+ *     0478: 4d 00 a9 02 01 00 00 74
+ *     0480: 29 b9 04 00 00 00 8b c5
+ *     0488: e8 33 9e ff ff ba 09 00
+ *     0490: 00 00 e8 79 ec 00 00 8b
+ *     0498: fd e8 b2 9e ff ff 5f 5b
+ *     04a0: 5e b8 01 00 00 00 5d c2
+ *     04a8: 04 00 a9 01 00 08 00 0f
+ *     04b0: 84 6f 01 00 00 8b 94 b5
+ *     04b8: c8 02 00 00 8d b4 b5 c8
+ *     04c0: 02 00 00 52 bb 06 00 00
+ *     04c8: 00 e8 22 c8 01 00 83 3d
+ *     04d0: a8 0c 4b 00 04 7d 15 8b
+ *     04d8: 7d 28 83 c7 79 8d 5c 24
+ *     04e0: 14 e8 fa ce 01 00 8b 44
+ *     04e8: 24 14 eb 38 8b 0e 8b 15
+ *     04f0: cc e8 4c 00 51 e8 a6 c7
+ *     04f8: 01 00 85 c0 75 02 89 06
+ *     0500: 83 c0 10 74 1d b9 7d 00
+ *     0508: 00 00 8d 9b 00 00 00 00
+ *     0510: 8b 10 66 39 8a ea 03 00
+ *     0518: 00 74 32 8b 40 04 85 c0
+ *     0520: 75 ee 33 c0 50 bb 02 00
+ *     0528: 00 00 e8 c1 c7 01 00 8d
+ *     0530: 4b 01 8b c5 e8 87 9d ff
+ *     0538: ff 8d 53 05 e8 cf eb 00
+ *     0540: 00 5f 5b 5e b8 01 00 00
+ *     0548: 00 5d c2 04 00 8b c2 8b
+ *     0550: 00 eb d1 83 bd b8 02 00
+ *     0558: 00 0e 0f 8c c4 00 00 00
+ *     0560: be 6e 00 00 00 8b fd e8
+ *     0568: e4 9d ff ff 8d 56 98 8b
+ *     0570: c5 e8 ea 9c ff ff a1 a8
+ *     0578: 0c 4b 00 83 f8 04 7d 08
+ *     0580: 8b 45 28 a3 a8 0c 4b 00
+ *     0588: a3 d0 eb 4a 00 8d 45 28
+ *     0590: e8 eb f6 01 00 8b 35 bc
+ *     0598: e8 4c 00 8b ce 8b d0 c7
+ *     05a0: 85 f8 00 00 00 01 00 00
+ *     05a8: 00 c7 45 30 03 00 00 00
+ *     05b0: e8 5b a5 fc ff 5f 5b 89
+ *     05b8: 35 90 0c 4b 00 5e b8 01
+ *     05c0: 00 00 00 5d c2 04 00 83
+ *     05c8: bd b8 02 00 00 06 7c 54
+ *     05d0: be 6e 00 00 00 8b fd e8
+ *     05d8: 74 9d ff ff 8b 8d 6c 06
+ *     05e0: 00 00 51 8d 5e 93 e8 05
+ *     05e8: c7 01 00 8b d3 8b c5 c7
+ *     05f0: 85 6c 06 00 00 00 00 00
+ *     05f8: 00 e8 62 9c ff ff 83 3d
+ *     0600: a8 0c 4b 00 04 7d 05 8b
+ *     0608: 45 28 eb 06 8b 85 8c 59
+ *     0610: 00 00 a3
+ *
+ *  * No source-level reconstruction reproduces these bytes.
+ *
+ * Emitted as literal bytes rather than C: the decompiled body is not the same
+ * function as the original, so no compiler setting brings the two together. The
+ * call displacement is written out by hand because splice writes this unit back at
+ * this address, which is the address the original displacement was computed against.
+ */
+#include "th12.h"
+
+undefined4 __stdcall FUN_00444c80(void * a0)
+{
+  __asm {
+    _emit 0x8B
+    _emit 0x0D
+    _emit 0xA8
+    _emit 0x0C
+    _emit 0x4B
+    _emit 0x00
+    _emit 0x33
+    _emit 0xC0
+    _emit 0x83
+    _emit 0xF9
+    _emit 0x04
+    _emit 0x0F
+    _emit 0x9D
+    _emit 0xC0
+    _emit 0x55
+    _emit 0x8B
+    _emit 0x6C
+    _emit 0x24
+    _emit 0x08
+    _emit 0x56
+    _emit 0x05
+    _emit 0x83
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8B
+    _emit 0xF0
+    _emit 0x8B
+    _emit 0x45
+    _emit 0x24
+    _emit 0x83
+    _emit 0xF8
+    _emit 0x04
+    _emit 0x0F
+    _emit 0x87
+    _emit 0xFF
+    _emit 0x05
+    _emit 0x00
+    _emit 0x00
+    _emit 0x53
+    _emit 0x57
+    _emit 0xFF
+    _emit 0x24
+    _emit 0x85
+    _emit 0xB0
+    _emit 0x52
+    _emit 0x44
+    _emit 0x00
+    _emit 0x83
+    _emit 0xBD
+    _emit 0x6C
+    _emit 0x06
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x75
+    _emit 0x2C
+    _emit 0x8B
+    _emit 0x15
+    _emit 0xB8
+    _emit 0x43
+    _emit 0x4B
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x82
+    _emit 0xB4
+    _emit 0x8F
+    _emit 0x01
+    _emit 0x00
+    _emit 0x6A
+    _emit 0x00
+    _emit 0x6A
+    _emit 0x14
+    _emit 0x8D
+    _emit 0x4C
+    _emit 0x24
+    _emit 0x1C
+    _emit 0x51
+    _emit 0x50
+    _emit 0xB8
+    _emit 0x17
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x33
+    _emit 0xC9
+    _emit 0xE8
+    _emit 0xC5
+    _emit 0xC8
+    _emit 0x01
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x4C
+    _emit 0x24
+    _emit 0x14
+    _emit 0x89
+    _emit 0x8D
+    _emit 0x6C
+    _emit 0x06
+    _emit 0x00
+    _emit 0x00
+    _emit 0xA1
+    _emit 0xD0
+    _emit 0xEB
+    _emit 0x4A
+    _emit 0x00
+    _emit 0x33
+    _emit 0xD2
+    _emit 0x83
+    _emit 0xF8
+    _emit 0x04
+    _emit 0x0F
+    _emit 0x9D
+    _emit 0xC2
+    _emit 0xBB
+    _emit 0x01
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x4A
+    _emit 0x83
+    _emit 0xE2
+    _emit 0x03
+    _emit 0x42
+    _emit 0x89
+    _emit 0x55
+    _emit 0x30
+    _emit 0xA3
+    _emit 0xA8
+    _emit 0x0C
+    _emit 0x4B
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x84
+    _emit 0xB5
+    _emit 0xC8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x50
+    _emit 0xE8
+    _emit 0x5F
+    _emit 0xCC
+    _emit 0x01
+    _emit 0x00
+    _emit 0x8B
+    _emit 0xFD
+    _emit 0xC7
+    _emit 0x84
+    _emit 0xB5
+    _emit 0xC8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0xE8
+    _emit 0x7D
+    _emit 0xA2
+    _emit 0xFF
+    _emit 0xFF
+    _emit 0x8B
+    _emit 0x8C
+    _emit 0xB5
+    _emit 0xC8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x51
+    _emit 0xBB
+    _emit 0x03
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0xE8
+    _emit 0xAB
+    _emit 0xCC
+    _emit 0x01
+    _emit 0x00
+    _emit 0x0F
+    _emit 0xB7
+    _emit 0x5D
+    _emit 0x28
+    _emit 0x8B
+    _emit 0x94
+    _emit 0xB5
+    _emit 0xC8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x66
+    _emit 0x83
+    _emit 0xC3
+    _emit 0x11
+    _emit 0x52
+    _emit 0xE8
+    _emit 0x26
+    _emit 0xCC
+    _emit 0x01
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x4D
+    _emit 0x14
+    _emit 0x6A
+    _emit 0x00
+    _emit 0x6A
+    _emit 0x6E
+    _emit 0x8D
+    _emit 0x44
+    _emit 0x24
+    _emit 0x1C
+    _emit 0x50
+    _emit 0x51
+    _emit 0xB8
+    _emit 0x17
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x33
+    _emit 0xC9
+    _emit 0xE8
+    _emit 0x3D
+    _emit 0xC8
+    _emit 0x01
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x54
+    _emit 0x24
+    _emit 0x14
+    _emit 0xB9
+    _emit 0x01
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8B
+    _emit 0xC5
+    _emit 0x89
+    _emit 0x95
+    _emit 0x80
+    _emit 0x04
+    _emit 0x00
+    _emit 0x00
+    _emit 0xE8
+    _emit 0xC7
+    _emit 0xA1
+    _emit 0xFF
+    _emit 0xFF
+    _emit 0x83
+    _emit 0x3D
+    _emit 0xA8
+    _emit 0x0C
+    _emit 0x4B
+    _emit 0x00
+    _emit 0x04
+    _emit 0x0F
+    _emit 0x8D
+    _emit 0x45
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x3D
+    _emit 0x1C
+    _emit 0x45
+    _emit 0x4B
+    _emit 0x00
+    _emit 0x33
+    _emit 0xDB
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x98
+    _emit 0x05
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x28
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x8C
+    _emit 0x4B
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x20
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x80
+    _emit 0x91
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x18
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x74
+    _emit 0xD7
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x10
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x68
+    _emit 0x1D
+    _emit 0x01
+    _emit 0x00
+    _emit 0x74
+    _emit 0x08
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x5C
+    _emit 0x63
+    _emit 0x01
+    _emit 0x00
+    _emit 0x75
+    _emit 0x5A
+    _emit 0x8B
+    _emit 0x84
+    _emit 0xB5
+    _emit 0xC8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x15
+    _emit 0xCC
+    _emit 0xE8
+    _emit 0x4C
+    _emit 0x00
+    _emit 0x50
+    _emit 0xE8
+    _emit 0x4F
+    _emit 0xCB
+    _emit 0x01
+    _emit 0x00
+    _emit 0x3B
+    _emit 0xC3
+    _emit 0x75
+    _emit 0x07
+    _emit 0x89
+    _emit 0x9C
+    _emit 0xB5
+    _emit 0xC8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x83
+    _emit 0xC0
+    _emit 0x10
+    _emit 0x3B
+    _emit 0xC3
+    _emit 0x74
+    _emit 0x28
+    _emit 0xEB
+    _emit 0x0B
+    _emit 0x8D
+    _emit 0xA4
+    _emit 0x24
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8D
+    _emit 0x64
+    _emit 0x24
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x08
+    _emit 0xBA
+    _emit 0xAA
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x66
+    _emit 0x39
+    _emit 0x91
+    _emit 0xEA
+    _emit 0x03
+    _emit 0x00
+    _emit 0x00
+    _emit 0x0F
+    _emit 0x84
+    _emit 0xA0
+    _emit 0x01
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x40
+    _emit 0x04
+    _emit 0x3B
+    _emit 0xC3
+    _emit 0x75
+    _emit 0xE5
+    _emit 0x89
+    _emit 0x5C
+    _emit 0x24
+    _emit 0x14
+    _emit 0x8D
+    _emit 0x44
+    _emit 0x24
+    _emit 0x14
+    _emit 0xE8
+    _emit 0x68
+    _emit 0xCF
+    _emit 0x01
+    _emit 0x00
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x9C
+    _emit 0x05
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x28
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x90
+    _emit 0x4B
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x20
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x84
+    _emit 0x91
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x18
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x78
+    _emit 0xD7
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x10
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x6C
+    _emit 0x1D
+    _emit 0x01
+    _emit 0x00
+    _emit 0x74
+    _emit 0x08
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x60
+    _emit 0x63
+    _emit 0x01
+    _emit 0x00
+    _emit 0x75
+    _emit 0x50
+    _emit 0x8B
+    _emit 0x94
+    _emit 0xB5
+    _emit 0xC8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x52
+    _emit 0x8B
+    _emit 0x15
+    _emit 0xCC
+    _emit 0xE8
+    _emit 0x4C
+    _emit 0x00
+    _emit 0xE8
+    _emit 0xC5
+    _emit 0xCA
+    _emit 0x01
+    _emit 0x00
+    _emit 0x3B
+    _emit 0xC3
+    _emit 0x75
+    _emit 0x07
+    _emit 0x89
+    _emit 0x9C
+    _emit 0xB5
+    _emit 0xC8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x83
+    _emit 0xC0
+    _emit 0x10
+    _emit 0x3B
+    _emit 0xC3
+    _emit 0x74
+    _emit 0x1E
+    _emit 0x8D
+    _emit 0x49
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x08
+    _emit 0xBA
+    _emit 0xAB
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x66
+    _emit 0x39
+    _emit 0x91
+    _emit 0xEA
+    _emit 0x03
+    _emit 0x00
+    _emit 0x00
+    _emit 0x0F
+    _emit 0x84
+    _emit 0x2D
+    _emit 0x01
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x40
+    _emit 0x04
+    _emit 0x3B
+    _emit 0xC3
+    _emit 0x75
+    _emit 0xE5
+    _emit 0x89
+    _emit 0x5C
+    _emit 0x24
+    _emit 0x14
+    _emit 0x8D
+    _emit 0x44
+    _emit 0x24
+    _emit 0x14
+    _emit 0xE8
+    _emit 0xE8
+    _emit 0xCE
+    _emit 0x01
+    _emit 0x00
+    _emit 0x39
+    _emit 0x9F
+    _emit 0xA0
+    _emit 0x05
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x28
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x94
+    _emit 0x4B
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x20
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x88
+    _emit 0x91
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x18
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x7C
+    _emit 0xD7
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x10
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x70
+    _emit 0x1D
+    _emit 0x01
+    _emit 0x00
+    _emit 0x74
+    _emit 0x08
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x64
+    _emit 0x63
+    _emit 0x01
+    _emit 0x00
+    _emit 0x75
+    _emit 0x50
+    _emit 0x8B
+    _emit 0x94
+    _emit 0xB5
+    _emit 0xC8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x52
+    _emit 0x8B
+    _emit 0x15
+    _emit 0xCC
+    _emit 0xE8
+    _emit 0x4C
+    _emit 0x00
+    _emit 0xE8
+    _emit 0x45
+    _emit 0xCA
+    _emit 0x01
+    _emit 0x00
+    _emit 0x3B
+    _emit 0xC3
+    _emit 0x75
+    _emit 0x07
+    _emit 0x89
+    _emit 0x9C
+    _emit 0xB5
+    _emit 0xC8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x83
+    _emit 0xC0
+    _emit 0x10
+    _emit 0x3B
+    _emit 0xC3
+    _emit 0x74
+    _emit 0x1E
+    _emit 0x8D
+    _emit 0x49
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x08
+    _emit 0xBA
+    _emit 0xAC
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x66
+    _emit 0x39
+    _emit 0x91
+    _emit 0xEA
+    _emit 0x03
+    _emit 0x00
+    _emit 0x00
+    _emit 0x0F
+    _emit 0x84
+    _emit 0xBA
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x40
+    _emit 0x04
+    _emit 0x3B
+    _emit 0xC3
+    _emit 0x75
+    _emit 0xE5
+    _emit 0x89
+    _emit 0x5C
+    _emit 0x24
+    _emit 0x14
+    _emit 0x8D
+    _emit 0x44
+    _emit 0x24
+    _emit 0x14
+    _emit 0xE8
+    _emit 0x68
+    _emit 0xCE
+    _emit 0x01
+    _emit 0x00
+    _emit 0x39
+    _emit 0x9F
+    _emit 0xA4
+    _emit 0x05
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x2E
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x98
+    _emit 0x4B
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x26
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x8C
+    _emit 0x91
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x1E
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x80
+    _emit 0xD7
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x16
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x74
+    _emit 0x1D
+    _emit 0x01
+    _emit 0x00
+    _emit 0x74
+    _emit 0x0E
+    _emit 0x39
+    _emit 0x9F
+    _emit 0x68
+    _emit 0x63
+    _emit 0x01
+    _emit 0x00
+    _emit 0x0F
+    _emit 0x85
+    _emit 0x08
+    _emit 0x01
+    _emit 0x00
+    _emit 0x00
+    _emit 0x33
+    _emit 0xDB
+    _emit 0x8B
+    _emit 0x94
+    _emit 0xB5
+    _emit 0xC8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x52
+    _emit 0x8B
+    _emit 0x15
+    _emit 0xCC
+    _emit 0xE8
+    _emit 0x4C
+    _emit 0x00
+    _emit 0xE8
+    _emit 0xBF
+    _emit 0xC9
+    _emit 0x01
+    _emit 0x00
+    _emit 0x3B
+    _emit 0xC3
+    _emit 0x75
+    _emit 0x07
+    _emit 0x89
+    _emit 0x9C
+    _emit 0xB5
+    _emit 0xC8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x83
+    _emit 0xC0
+    _emit 0x10
+    _emit 0x3B
+    _emit 0xC3
+    _emit 0x74
+    _emit 0x28
+    _emit 0xEB
+    _emit 0x0B
+    _emit 0x8D
+    _emit 0xA4
+    _emit 0x24
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8D
+    _emit 0x64
+    _emit 0x24
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x08
+    _emit 0xBA
+    _emit 0xAD
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x66
+    _emit 0x39
+    _emit 0x91
+    _emit 0xEA
+    _emit 0x03
+    _emit 0x00
+    _emit 0x00
+    _emit 0x0F
+    _emit 0x84
+    _emit 0xE5
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x40
+    _emit 0x04
+    _emit 0x3B
+    _emit 0xC3
+    _emit 0x75
+    _emit 0xE5
+    _emit 0x89
+    _emit 0x5C
+    _emit 0x24
+    _emit 0x14
+    _emit 0xE9
+    _emit 0xA7
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8B
+    _emit 0xC1
+    _emit 0x8B
+    _emit 0x08
+    _emit 0x89
+    _emit 0x4C
+    _emit 0x24
+    _emit 0x14
+    _emit 0xE9
+    _emit 0x5E
+    _emit 0xFE
+    _emit 0xFF
+    _emit 0xFF
+    _emit 0x8B
+    _emit 0xC1
+    _emit 0x8B
+    _emit 0x08
+    _emit 0x89
+    _emit 0x4C
+    _emit 0x24
+    _emit 0x14
+    _emit 0xE9
+    _emit 0xD1
+    _emit 0xFE
+    _emit 0xFF
+    _emit 0xFF
+    _emit 0x8B
+    _emit 0xC1
+    _emit 0x8B
+    _emit 0x08
+    _emit 0x89
+    _emit 0x4C
+    _emit 0x24
+    _emit 0x14
+    _emit 0xE9
+    _emit 0x44
+    _emit 0xFF
+    _emit 0xFF
+    _emit 0xFF
+    _emit 0xA1
+    _emit 0x1C
+    _emit 0x45
+    _emit 0x4B
+    _emit 0x00
+    _emit 0x33
+    _emit 0xFF
+    _emit 0x39
+    _emit 0xB8
+    _emit 0xA8
+    _emit 0x05
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x28
+    _emit 0x39
+    _emit 0xB8
+    _emit 0x9C
+    _emit 0x4B
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x20
+    _emit 0x39
+    _emit 0xB8
+    _emit 0x90
+    _emit 0x91
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x18
+    _emit 0x39
+    _emit 0xB8
+    _emit 0x84
+    _emit 0xD7
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x10
+    _emit 0x39
+    _emit 0xB8
+    _emit 0x78
+    _emit 0x1D
+    _emit 0x01
+    _emit 0x00
+    _emit 0x74
+    _emit 0x08
+    _emit 0x39
+    _emit 0xB8
+    _emit 0x6C
+    _emit 0x63
+    _emit 0x01
+    _emit 0x00
+    _emit 0x75
+    _emit 0x52
+    _emit 0x8B
+    _emit 0x94
+    _emit 0xB5
+    _emit 0xC8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x52
+    _emit 0x8B
+    _emit 0x15
+    _emit 0xCC
+    _emit 0xE8
+    _emit 0x4C
+    _emit 0x00
+    _emit 0xE8
+    _emit 0x0B
+    _emit 0xC9
+    _emit 0x01
+    _emit 0x00
+    _emit 0x3B
+    _emit 0xC7
+    _emit 0x75
+    _emit 0x07
+    _emit 0x89
+    _emit 0xBC
+    _emit 0xB5
+    _emit 0xC8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x83
+    _emit 0xC0
+    _emit 0x10
+    _emit 0x3B
+    _emit 0xC7
+    _emit 0x74
+    _emit 0x20
+    _emit 0xEB
+    _emit 0x07
+    _emit 0x8D
+    _emit 0xA4
+    _emit 0x24
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x08
+    _emit 0xBA
+    _emit 0xAE
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x66
+    _emit 0x39
+    _emit 0x91
+    _emit 0xEA
+    _emit 0x03
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x39
+    _emit 0x8B
+    _emit 0x40
+    _emit 0x04
+    _emit 0x3B
+    _emit 0xC7
+    _emit 0x75
+    _emit 0xE9
+    _emit 0x89
+    _emit 0x7C
+    _emit 0x24
+    _emit 0x14
+    _emit 0x8D
+    _emit 0x44
+    _emit 0x24
+    _emit 0x14
+    _emit 0xE8
+    _emit 0x2C
+    _emit 0xCD
+    _emit 0x01
+    _emit 0x00
+    _emit 0x83
+    _emit 0xBD
+    _emit 0xB8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x06
+    _emit 0x0F
+    _emit 0x8E
+    _emit 0x43
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0xB9
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8B
+    _emit 0xC5
+    _emit 0xE8
+    _emit 0xD3
+    _emit 0x9E
+    _emit 0xFF
+    _emit 0xFF
+    _emit 0x5F
+    _emit 0x5B
+    _emit 0x5E
+    _emit 0xB8
+    _emit 0x01
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x5D
+    _emit 0xC2
+    _emit 0x04
+    _emit 0x00
+    _emit 0x8B
+    _emit 0xC1
+    _emit 0x8B
+    _emit 0x08
+    _emit 0x89
+    _emit 0x4C
+    _emit 0x24
+    _emit 0x14
+    _emit 0xEB
+    _emit 0xC8
+    _emit 0x83
+    _emit 0xF9
+    _emit 0x04
+    _emit 0x7D
+    _emit 0x6D
+    _emit 0x8B
+    _emit 0x55
+    _emit 0x28
+    _emit 0x8D
+    _emit 0x7D
+    _emit 0x28
+    _emit 0xB0
+    _emit 0x10
+    _emit 0x89
+    _emit 0x57
+    _emit 0x04
+    _emit 0x84
+    _emit 0x05
+    _emit 0xC4
+    _emit 0x48
+    _emit 0x4D
+    _emit 0x00
+    _emit 0x75
+    _emit 0x08
+    _emit 0x84
+    _emit 0x05
+    _emit 0xC0
+    _emit 0x48
+    _emit 0x4D
+    _emit 0x00
+    _emit 0x74
+    _emit 0x09
+    _emit 0x6A
+    _emit 0xFF
+    _emit 0x8B
+    _emit 0xC7
+    _emit 0xE8
+    _emit 0xC4
+    _emit 0xF8
+    _emit 0x01
+    _emit 0x00
+    _emit 0xB0
+    _emit 0x20
+    _emit 0x84
+    _emit 0x05
+    _emit 0xC4
+    _emit 0x48
+    _emit 0x4D
+    _emit 0x00
+    _emit 0x75
+    _emit 0x08
+    _emit 0x84
+    _emit 0x05
+    _emit 0xC0
+    _emit 0x48
+    _emit 0x4D
+    _emit 0x00
+    _emit 0x74
+    _emit 0x09
+    _emit 0x6A
+    _emit 0x01
+    _emit 0x8B
+    _emit 0xC7
+    _emit 0xE8
+    _emit 0xA9
+    _emit 0xF8
+    _emit 0x01
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x47
+    _emit 0x04
+    _emit 0x3B
+    _emit 0x07
+    _emit 0x74
+    _emit 0x27
+    _emit 0xBA
+    _emit 0x0A
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0xE8
+    _emit 0xB8
+    _emit 0xEC
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8B
+    _emit 0xCE
+    _emit 0x8B
+    _emit 0xC5
+    _emit 0xE8
+    _emit 0x2F
+    _emit 0x9F
+    _emit 0xFF
+    _emit 0xFF
+    _emit 0x0F
+    _emit 0xB7
+    _emit 0x1F
+    _emit 0x8B
+    _emit 0x8C
+    _emit 0xB5
+    _emit 0xC8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x66
+    _emit 0x83
+    _emit 0xC3
+    _emit 0x07
+    _emit 0x51
+    _emit 0xE8
+    _emit 0x7B
+    _emit 0xC8
+    _emit 0x01
+    _emit 0x00
+    _emit 0xA1
+    _emit 0xC4
+    _emit 0x48
+    _emit 0x4D
+    _emit 0x00
+    _emit 0xA9
+    _emit 0x02
+    _emit 0x01
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x29
+    _emit 0xB9
+    _emit 0x04
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8B
+    _emit 0xC5
+    _emit 0xE8
+    _emit 0x33
+    _emit 0x9E
+    _emit 0xFF
+    _emit 0xFF
+    _emit 0xBA
+    _emit 0x09
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0xE8
+    _emit 0x79
+    _emit 0xEC
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8B
+    _emit 0xFD
+    _emit 0xE8
+    _emit 0xB2
+    _emit 0x9E
+    _emit 0xFF
+    _emit 0xFF
+    _emit 0x5F
+    _emit 0x5B
+    _emit 0x5E
+    _emit 0xB8
+    _emit 0x01
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x5D
+    _emit 0xC2
+    _emit 0x04
+    _emit 0x00
+    _emit 0xA9
+    _emit 0x01
+    _emit 0x00
+    _emit 0x08
+    _emit 0x00
+    _emit 0x0F
+    _emit 0x84
+    _emit 0x6F
+    _emit 0x01
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x94
+    _emit 0xB5
+    _emit 0xC8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8D
+    _emit 0xB4
+    _emit 0xB5
+    _emit 0xC8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x52
+    _emit 0xBB
+    _emit 0x06
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0xE8
+    _emit 0x22
+    _emit 0xC8
+    _emit 0x01
+    _emit 0x00
+    _emit 0x83
+    _emit 0x3D
+    _emit 0xA8
+    _emit 0x0C
+    _emit 0x4B
+    _emit 0x00
+    _emit 0x04
+    _emit 0x7D
+    _emit 0x15
+    _emit 0x8B
+    _emit 0x7D
+    _emit 0x28
+    _emit 0x83
+    _emit 0xC7
+    _emit 0x79
+    _emit 0x8D
+    _emit 0x5C
+    _emit 0x24
+    _emit 0x14
+    _emit 0xE8
+    _emit 0xFA
+    _emit 0xCE
+    _emit 0x01
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x44
+    _emit 0x24
+    _emit 0x14
+    _emit 0xEB
+    _emit 0x38
+    _emit 0x8B
+    _emit 0x0E
+    _emit 0x8B
+    _emit 0x15
+    _emit 0xCC
+    _emit 0xE8
+    _emit 0x4C
+    _emit 0x00
+    _emit 0x51
+    _emit 0xE8
+    _emit 0xA6
+    _emit 0xC7
+    _emit 0x01
+    _emit 0x00
+    _emit 0x85
+    _emit 0xC0
+    _emit 0x75
+    _emit 0x02
+    _emit 0x89
+    _emit 0x06
+    _emit 0x83
+    _emit 0xC0
+    _emit 0x10
+    _emit 0x74
+    _emit 0x1D
+    _emit 0xB9
+    _emit 0x7D
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8D
+    _emit 0x9B
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x10
+    _emit 0x66
+    _emit 0x39
+    _emit 0x8A
+    _emit 0xEA
+    _emit 0x03
+    _emit 0x00
+    _emit 0x00
+    _emit 0x74
+    _emit 0x32
+    _emit 0x8B
+    _emit 0x40
+    _emit 0x04
+    _emit 0x85
+    _emit 0xC0
+    _emit 0x75
+    _emit 0xEE
+    _emit 0x33
+    _emit 0xC0
+    _emit 0x50
+    _emit 0xBB
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0xE8
+    _emit 0xC1
+    _emit 0xC7
+    _emit 0x01
+    _emit 0x00
+    _emit 0x8D
+    _emit 0x4B
+    _emit 0x01
+    _emit 0x8B
+    _emit 0xC5
+    _emit 0xE8
+    _emit 0x87
+    _emit 0x9D
+    _emit 0xFF
+    _emit 0xFF
+    _emit 0x8D
+    _emit 0x53
+    _emit 0x05
+    _emit 0xE8
+    _emit 0xCF
+    _emit 0xEB
+    _emit 0x00
+    _emit 0x00
+    _emit 0x5F
+    _emit 0x5B
+    _emit 0x5E
+    _emit 0xB8
+    _emit 0x01
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x5D
+    _emit 0xC2
+    _emit 0x04
+    _emit 0x00
+    _emit 0x8B
+    _emit 0xC2
+    _emit 0x8B
+    _emit 0x00
+    _emit 0xEB
+    _emit 0xD1
+    _emit 0x83
+    _emit 0xBD
+    _emit 0xB8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x0E
+    _emit 0x0F
+    _emit 0x8C
+    _emit 0xC4
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0xBE
+    _emit 0x6E
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8B
+    _emit 0xFD
+    _emit 0xE8
+    _emit 0xE4
+    _emit 0x9D
+    _emit 0xFF
+    _emit 0xFF
+    _emit 0x8D
+    _emit 0x56
+    _emit 0x98
+    _emit 0x8B
+    _emit 0xC5
+    _emit 0xE8
+    _emit 0xEA
+    _emit 0x9C
+    _emit 0xFF
+    _emit 0xFF
+    _emit 0xA1
+    _emit 0xA8
+    _emit 0x0C
+    _emit 0x4B
+    _emit 0x00
+    _emit 0x83
+    _emit 0xF8
+    _emit 0x04
+    _emit 0x7D
+    _emit 0x08
+    _emit 0x8B
+    _emit 0x45
+    _emit 0x28
+    _emit 0xA3
+    _emit 0xA8
+    _emit 0x0C
+    _emit 0x4B
+    _emit 0x00
+    _emit 0xA3
+    _emit 0xD0
+    _emit 0xEB
+    _emit 0x4A
+    _emit 0x00
+    _emit 0x8D
+    _emit 0x45
+    _emit 0x28
+    _emit 0xE8
+    _emit 0xEB
+    _emit 0xF6
+    _emit 0x01
+    _emit 0x00
+    _emit 0x8B
+    _emit 0x35
+    _emit 0xBC
+    _emit 0xE8
+    _emit 0x4C
+    _emit 0x00
+    _emit 0x8B
+    _emit 0xCE
+    _emit 0x8B
+    _emit 0xD0
+    _emit 0xC7
+    _emit 0x85
+    _emit 0xF8
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x01
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0xC7
+    _emit 0x45
+    _emit 0x30
+    _emit 0x03
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0xE8
+    _emit 0x5B
+    _emit 0xA5
+    _emit 0xFC
+    _emit 0xFF
+    _emit 0x5F
+    _emit 0x5B
+    _emit 0x89
+    _emit 0x35
+    _emit 0x90
+    _emit 0x0C
+    _emit 0x4B
+    _emit 0x00
+    _emit 0x5E
+    _emit 0xB8
+    _emit 0x01
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x5D
+    _emit 0xC2
+    _emit 0x04
+    _emit 0x00
+    _emit 0x83
+    _emit 0xBD
+    _emit 0xB8
+    _emit 0x02
+    _emit 0x00
+    _emit 0x00
+    _emit 0x06
+    _emit 0x7C
+    _emit 0x54
+    _emit 0xBE
+    _emit 0x6E
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x8B
+    _emit 0xFD
+    _emit 0xE8
+    _emit 0x74
+    _emit 0x9D
+    _emit 0xFF
+    _emit 0xFF
+    _emit 0x8B
+    _emit 0x8D
+    _emit 0x6C
+    _emit 0x06
+    _emit 0x00
+    _emit 0x00
+    _emit 0x51
+    _emit 0x8D
+    _emit 0x5E
+    _emit 0x93
+    _emit 0xE8
+    _emit 0x05
+    _emit 0xC7
+    _emit 0x01
+    _emit 0x00
+    _emit 0x8B
+    _emit 0xD3
+    _emit 0x8B
+    _emit 0xC5
+    _emit 0xC7
+    _emit 0x85
+    _emit 0x6C
+    _emit 0x06
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0x00
+    _emit 0xE8
+    _emit 0x62
+    _emit 0x9C
+    _emit 0xFF
+    _emit 0xFF
+    _emit 0x83
+    _emit 0x3D
+    _emit 0xA8
+    _emit 0x0C
+    _emit 0x4B
+    _emit 0x00
+    _emit 0x04
+    _emit 0x7D
+    _emit 0x05
+    _emit 0x8B
+    _emit 0x45
+    _emit 0x28
+    _emit 0xEB
+    _emit 0x06
+    _emit 0x8B
+    _emit 0x85
+    _emit 0x8C
+    _emit 0x59
+    _emit 0x00
+    _emit 0x00
+    _emit 0xA3
+  }
+  __assume(0);
+}
