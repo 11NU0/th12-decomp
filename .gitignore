@@ -1,0 +1,33 @@
+﻿# Build outputs
+artifacts/*.exe
+artifacts/*.log
+artifacts/*.exe.map
+build/
+build_*/
+build_plain/
+build_hot/
+na_*/
+tmp/
+tmp_*/
+
+# Toolchain (large/proprietary)
+tools/
+
+# Original binary
+resources/th12.exe
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor/OS
+.vs/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Temp
+*.tmp
